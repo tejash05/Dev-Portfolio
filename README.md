@@ -9,4 +9,4 @@ Currently, two official plugins are available:
 
 # My Project
 
-Visit the website here: [My Portfolio Website]([https://tejash-tarun.vercel.app](https://dev-portfolio-khaki-seven.vercel.app/))
+Visit the website here: https://dev-portfolio-khaki-seven.vercel.app/
