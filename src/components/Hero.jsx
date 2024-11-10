@@ -1,5 +1,5 @@
 import { Opacity } from "@mui/icons-material"
-import profilePic from "../assets/pic1.png"
+import profilePic from "../assets/pic1.png";
 import { HERO_CONTENT } from "../constants"
 import { motion, stagger } from "framer-motion"
 import { duration } from "@mui/material"
