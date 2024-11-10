@@ -1,8 +1,5 @@
 import { SiPython, SiFlask, SiFastapi, SiMysql, SiReact } from "react-icons/si";
 import { animate, motion } from "framer-motion";
-import { duration } from "@mui/material";
-import { Repeat } from "@mui/icons-material";
-
 const iconVariants = (duration) => ({
   initial: { y: -10 },
   animate: {

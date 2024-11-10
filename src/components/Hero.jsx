@@ -1,9 +1,6 @@
-import { Opacity } from "@mui/icons-material";
 import profilePic from "../assets/Pic.png";
 import { HERO_CONTENT } from "../constants"
 import { motion, stagger } from "framer-motion"
-import { duration } from "@mui/material"
-
 const containerVariants = {
     hidden: { 
       opacity: 0, 

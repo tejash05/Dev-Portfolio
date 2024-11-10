@@ -1,8 +1,6 @@
 import React from 'react';
 import { PROJECTS } from '../constants';
 import { motion } from 'framer-motion';
-import { Opacity } from '@mui/icons-material';
-
 const Projects = () => {
   return (
     <div className="pb-4">
