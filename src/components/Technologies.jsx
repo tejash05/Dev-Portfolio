@@ -1,5 +1,23 @@
-import { SiPython, SiFlask, SiFastapi, SiMysql, SiReact } from "react-icons/si";
-import { animate, motion } from "framer-motion";
+import React from "react";
+import {
+  SiPython,
+  SiFlask,
+  SiFastapi,
+  SiMysql,
+  SiMongodb,
+  SiReact,
+  SiExpress,
+  SiNodedotjs,
+  SiJavascript,
+  SiHtml5,
+  SiCss3,
+  SiGithub,
+  SiTypescript,
+  SiOpenai,
+  SiGoogle,
+} from "react-icons/si";
+import { motion } from "framer-motion";
+
 const iconVariants = (duration) => ({
   initial: { y: -10 },
   animate: {
@@ -8,10 +26,28 @@ const iconVariants = (duration) => ({
       duration: duration,
       ease: "linear",
       repeatType: "reverse",
-      repeat: Infinity // Added to make the animation loop continuously
-    }
-  }
+      repeat: Infinity,
+    },
+  },
 });
+
+const technologies = [
+  { name: "Python", icon: <SiPython className="text-7xl text-blue-400" />, delay: 2.5 },
+  { name: "Flask", icon: <SiFlask className="text-7xl text-gray-500" />, delay: 3 },
+  { name: "FastAPI", icon: <SiFastapi className="text-7xl text-green-400" />, delay: 2 },
+  { name: "MySQL", icon: <SiMysql className="text-7xl text-blue-600" />, delay: 2.8 },
+  { name: "MongoDB", icon: <SiMongodb className="text-7xl text-green-500" />, delay: 3.2 },
+  { name: "Express", icon: <SiExpress className="text-7xl text-white" />, delay: 2.3 },
+  { name: "Node.js", icon: <SiNodedotjs className="text-7xl text-green-600" />, delay: 2.6 },
+  { name: "React", icon: <SiReact className="text-7xl text-cyan-400" />, delay: 2.7 },
+  { name: "TypeScript", icon: <SiTypescript className="text-7xl text-blue-500" />, delay: 3.3 },
+  { name: "JavaScript", icon: <SiJavascript className="text-7xl text-yellow-400" />, delay: 2.9 },
+  { name: "HTML5", icon: <SiHtml5 className="text-7xl text-orange-500" />, delay: 2.4 },
+  { name: "CSS3", icon: <SiCss3 className="text-7xl text-blue-500" />, delay: 2.2 },
+  { name: "GitHub", icon: <SiGithub className="text-7xl text-white" />, delay: 3.5 },
+  { name: "OpenAI", icon: <SiOpenai className="text-7xl text-emerald-500" />, delay: 3.6 },
+  { name: "Gemini", icon: <SiGoogle className="text-7xl text-blue-400" />, delay: 3.7 },
+];
 
 const Technologies = () => {
   return (
@@ -24,47 +60,25 @@ const Technologies = () => {
       >
         Technologies
       </motion.h2>
+
       <motion.div
         whileInView={{ opacity: 1, x: 0 }}
         initial={{ opacity: 0, x: -100 }}
         transition={{ duration: 1.5 }}
         className="flex flex-wrap items-center justify-center gap-4"
       >
-        <motion.div
-          initial="initial"
-          animate="animate"
-          variants={iconVariants(2.5)}
-          className="p-4"
-        >
-          <SiPython className="text-7xl text-blue-400" />
-        </motion.div>
-        <motion.div
-          initial="initial"
-          animate="animate"
-          variants={iconVariants(3)}
-          className="p-4"
-        >
-          <SiFlask className="text-7xl text-gray-500" />
-        </motion.div>
-        <motion.div 
-        initial="initial"
-        animate="animate"
-        variants={iconVariants(5)}className="p-4">
-          <SiFastapi className="text-7xl text-green-400" />
-        </motion.div>
-        <motion.div
-        initial="initial"
-        animate="animate"
-        variants={iconVariants(2)}
-        className="p-4">
-          <SiMysql className="text-7xl text-blue-600" /> {/* Representing SQL */}
-        </motion.div>
-        <motion.div 
-          initial="initial"
-          animate="animate"
-          variants={iconVariants(6)}className="p-4">   
-          <SiReact className="text-7xl text-cyan-400" />
-        </motion.div>
+        {technologies.map(({ icon, delay, name }, index) => (
+          <motion.div
+            key={index}
+            initial="initial"
+            animate="animate"
+            variants={iconVariants(delay)}
+            className="p-4"
+            title={name} // 👈 Tooltip on hover
+          >
+            {icon}
+          </motion.div>
+        ))}
       </motion.div>
     </div>
   );

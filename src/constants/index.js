@@ -18,34 +18,50 @@ export const EXPERIENCES = [
 ];
 
 export const PROJECTS = [
+  
   {
-    title: "Movie Recommendation System",
-    image: project1,
-    description:
-      "An intelligent system providing tailored film suggestions, user feedback integration, and seamless navigation, utilizing advanced algorithms for personalized movie recommendations.",
-    technologies: ["Python", "Flask", "NLP", "API", "HTML","CSS","JS"],
-  },
+  title: "SafeClick",
+  image: project1, // replace with actual image import or path
+  description:
+    "SafeClick is an AI-powered phishing detection system that analyzes over 1 million URLs in real-time using XGBoost. It won a national hackathon in 2025 by achieving 92% accuracy and reducing false positives by 35%. The system integrates SSIM-based clone detection, WHOIS data analysis, and HTML structural scanning. A Chrome extension alerts users of threats instantly, while a MERN-stack dashboard visualizes threat trends and user activity.",
+  technologies: [
+    "MERN",
+    "XGBoost",
+    "Chrome Extension",
+    "SSIM",
+    "WHOIS",
+    "HTML",
+    "CSS",
+    "JavaScript"
+  ],
+  github: "https://github.com/tejash05/SafeClick",
+},
+
   {
-    title: "Forest Fire Pridiction",
-    image: project2,
-    description:
-      "Built a model predicting forest fires using machine learning, analyzing environmental conditions for early risk alerts.",
-    technologies: ["Python","Flask","Ridge Regression","HTML", "CSS"],
-  },
+  title: "NeuroWell",
+  image: project2, // replace with the correct image path or import
+  description:
+    "An AI-first mental wellness chatbot that uses Gemini 1.5 Pro and LLaMA3 to detect emotional patterns and respond empathetically. It provides real-time chat summarization, concern extraction, and connects users with counselors. The system also generates detailed emotional insight reports in PDF format and supports vector-based document retrieval via LangChain and HuggingFace embeddings.",
+  technologies: [
+    "Python",
+    "FastAPI",
+    "Gemini API",
+    "LLaMA3",
+    "LangChain",
+    "MongoDB",
+    "ReportLab"
+  ],
+  github: "https://github.com/tejash05/NeuroWell",
+},
+
   {
-    title: "Portfolio Website",
-    image: project3,
-    description:
-      "A personal portfolio website showcasing projects, skills, and contact information.",
-    technologies: ["HTML", "CSS", "React", "Bootstrap"],
-  },
-  {
-    title: "Blogging Platform",
-    image: project4,
-    description:
-      "A platform for creating and publishing blog posts, with features like rich text editing, commenting, and user profiles.",
-    technologies: ["HTML", "CSS", "Vue.js", "Express", "mySQL"],
-  },
+  title: "FitTrack",
+  image: project3, // replace with the correct image import or path
+  description:
+    "A fitness tracking web application that allows users to log workouts, monitor dietary habits, and visualize progress through 10+ interactive charts. Built using React.js and Chart.js, the platform includes goal-setting, analytics, and a responsive dashboard that boosted user retention by 25% and engagement by 30%.",
+  technologies: ["React.js", "Chart.js", "Material-UI", "JavaScript", "HTML", "CSS"],
+  github: "https://github.com/tejash05/FitTrack",
+}
 ];
 
 export const CONTACT = {
